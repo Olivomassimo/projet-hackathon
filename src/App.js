@@ -1,18 +1,21 @@
 import React from 'react' ;
-import{Button } from 'react-bootstrap'
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.css'
+import { Route, Switch } from 'react-router-dom';
 import Header from './component/Header/index'
+import 'bootstrap/dist/css/bootstrap.css'
+import NavWild from './component/Nav/index'
 
-function App() {
-  return (
-  <div>
-    <Button variant="primary">Primary</Button>
-    <Header/>
-
-  </div>
-  
-  );
-}
+function App () {
+    return (
+      <div className='App'>
+      <NavWild />
+      <Switch>
+        <Route exact path='/' component={NavWild} />
+        <Route path='/time'  component={Header} />
+        <Route path='/sine-up' component={Header.NavWild} />
+      </Switch>
+      </div>
+    );
+  }
 
 export default App;
