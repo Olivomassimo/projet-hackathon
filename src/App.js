@@ -5,6 +5,7 @@ import Header from './component/Header/index'
 import 'bootstrap/dist/css/bootstrap.css'
 import NavWild from './component/Nav/index'
 import CarteEleve from './component/Carteeleve/index'
+import FooterPage from './Component/FooterPage';
 
 function App () {
     return (
@@ -16,6 +17,7 @@ function App () {
         <Route path='/time'  component={Header} />
         <Route path='/sine-up' component={Header.NavWild} />
       </Switch>
+      <FooterPage />
       </div>
     );
   }
