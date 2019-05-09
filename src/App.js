@@ -1,11 +1,11 @@
 import React from 'react' ;
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
-import Header from './component/Header/index'
+import Header from './Component/Header/index'
 import 'bootstrap/dist/css/bootstrap.css'
 import NavWild from './component/Nav/index'
 import CarteEleve from './component/Carteeleve/index'
-import FooterPage from './Component/FooterPage';
+import FooterPage from './Component/FooterPage/index';
 
 function App () {
     return (
