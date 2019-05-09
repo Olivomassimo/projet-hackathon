@@ -1,16 +1,26 @@
 import React from 'react' ;
 import './App.css';
+import { Route, Switch } from 'react-router-dom';
+import Header from './Component/Header/index'
 import 'bootstrap/dist/css/bootstrap.css'
-import Formulaire from './component/Formulaire/index'
+import NavWild from './component/Nav/index'
+import CarteEleve from './component/Carteeleve/index'
+import FooterPage from './Component/FooterPage/index';
+import Formulaire from './component/Formulaire/index';
 
-function App() {
-  return (
-  <div>
-    < Formulaire />
-
-  </div>
-  
-  );
-}
+function App () {
+    return (
+      <div className='App'>
+      <NavWild />
+      <CarteEleve />
+      <Switch>
+        <Route exact path='/' component={Header} />
+        <Route path='/time'  component={Header} />
+        <Route path='/sine-up' component={Formulaire} />
+      </Switch>
+      <FooterPage />
+      </div>
+    );
+  }
 
 export default App;
