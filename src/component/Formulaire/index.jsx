@@ -7,67 +7,71 @@ import './index.css'
 
 const Formulaire = () => {
     return (
-        <fieldset classnName="from" >
-            <legend classnName="from">contacte</legend>
 
-            <form classnName="form">
+        <div className="fromme">
+            <form className="form">
+                <h1>Form</h1>
+                <div className="name field-container">
+                    <input className="field" type="file" name="name" id="name" />
+                    <label className="label" for="name">Image</label>
+                </div>
 
-                <p classnName="name">
-                    <input type="text" name="name" id="name" />
-                    <label for="name">Name</label>
-                </p>
+                <div className="name field-container">
+                    <input className="field" type="text" name="name" id="name" />
+                    <label className="label" for="name">Name</label>
+                </div>
 
-                <p classnName="name">
-                    <input type="text" name="name" id="name" />
-                    <label for="name">First Name</label>
-                </p>
+                <div className="name field-container">
+                    <input className="field" type="text" name="name" id="name" />
+                    <label className="label" for="name">First Name</label>
+                </div>
 
-                <p classnName="name">
-                    <input type="number" name="age" id="age" />
-                    <label for="age">Age</label>
-                </p>
+                <div className="name field-container">
+                    <input className="field" type="number" name="age" id="age" />
+                    <label className="label" for="age">Age</label>
+                </div>
 
-                <p classnName="email">
-                    <input type="text" name="email" id="email" />
-                    <label for="email">E-mail</label>
-                </p>
+                <div className="email field-container">
+                    <input className="field" type="text" name="email" id="email" />
+                    <label className="label" for="email">E-mail</label>
+                </div>
 
-                <p classnName="tel">
-                    <input type="text" name="tel" id="tel" />
-                    <label for="tel">gsm</label>
-                </p>
+                <div className="tel field-container">
+                    <input className="field" type="text" name="tel" id="tel" />
+                    <label className="label" for="tel">gsm</label>
+                </div>
 
 
-                <p>
-                    <label for="pays">In which country do you live ?</label><br />
-                    <select name="pays" id="pays">
+                <div className="field-container">
+                    <label className="label" for="pays">In which country do you live ?</label><br />
+                    <select className="field" name="pays" id="pays">
                         <option value="belgique">Belgique</option>
                         <option value="france">France</option>
                         <option value="espagne">Espagne</option>
                         <option value="italie">Italie</option>
                         <option value="royaume-uni">Royaume-Uni</option>
                     </select>
-                </p>
+                </div>
 
 
-                <p>
+                <div className="field-container">
                     what are you doing :<br />
-                    <input type="checkbox" name="front end" id="front end" /> <label for="front end">Front end</label><br />
-                    <input type="checkbox" name="back end" id="back end" /> <label for="back end">Back end haché</label><br />
-                </p>
+                    <input className="field" type="checkbox" name="front end" id="front end" /> <label className="label" for="front end">Front end</label><br />
+                    <input className="field" type="checkbox" name="back end" id="back end" /> <label className="label" for="back end">Back end </label><br />
+                </div>
 
-                <p>
+                <div className="field-container">
                     what are you looking for :<br />
-                    <input type="checkbox" name="traineeship" id="traineeship" /> <label for="traineeship">Traineeship</label><br />
-                    <input type="checkbox" name="job" id="job" /> <label for="job">job</label><br />
-                </p>
+                    <input className="field" type="checkbox" name="traineeship" id="traineeship" /> <label className="label" for="traineeship">Traineeship</label><br />
+                    <input className="field" type="checkbox" name="job" id="job" /> <label className="label" for="job">CDD/CDI</label><br />
+                </div>
 
-                <p classnName="submit">
-                    <input type="submit" value="Send" />
-                </p>
+                <div className="submit">
+                    <input className="field" type="submit" value="Send" />
+                </div>
 
             </form>
-        </fieldset >
+        </div>
     );
 
 };
