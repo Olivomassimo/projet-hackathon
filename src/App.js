@@ -13,7 +13,7 @@ function App () {
       <NavWild />
       <CarteEleve />
       <Switch>
-        <Route exact path='/' component={NavWild} />
+        <Route exact path='/' component={Header} />
         <Route path='/time'  component={Header} />
         <Route path='/sine-up' component={Header.NavWild} />
       </Switch>
