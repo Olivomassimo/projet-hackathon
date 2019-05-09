@@ -1,9 +1,9 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
-import italie1 from './../../image/italie1.jpg';
-import italie2 from './../../image/italie2.jpg';
-import italie3 from './../../image/italie3.jpg';
+import wild1 from './../../image/wild1.jpg';
+import wild2 from './../../image/wild1.jpg';
+import wild3 from './../../image/wild1.jpg';
 import './index.css'
 
 
@@ -15,7 +15,7 @@ const Header = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={italie1}
+                    src={wild1}
                     alt="First slide"
                 />
                 <Carousel.Caption>
@@ -26,7 +26,7 @@ const Header = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={italie2}
+                    src={wild2}
                     alt="Third slide"
                 />
 
@@ -38,7 +38,7 @@ const Header = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={italie3}
+                    src={wild3}
                     alt="Third slide"
                 />
 
