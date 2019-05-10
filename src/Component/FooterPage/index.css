@@ -5,6 +5,10 @@
     
 }
 
+.footer img{
+    width:100%;
+}
+
 .fond{
     background-color:  #343a40 ;
     list-style: none ;

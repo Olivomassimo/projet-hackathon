@@ -9,13 +9,13 @@ class Carts extends React.Component {
         super(props)
         this.state = {
             eleve: this.props.eleve,
-            selectStudent : this.props.selectStudent,
+            selectStudent: this.props.selectStudent,
             isActive: true,
         }
     }
 
     handleClick = () => {
-       const { eleve, selectStudent } = this.state;
+        const { eleve, selectStudent } = this.state;
         selectStudent(eleve)
         this.setState({
             isActive: false
@@ -23,27 +23,27 @@ class Carts extends React.Component {
 
     }
     render() {
-       const { eleve, isActive } = this.state;
+        const { eleve, isActive } = this.state;
 
-       
+
         return (
-            < div className = "card" >
-                <div className="image-container">
-                    <NavLink to={`/DisplayEleve/${eleve._id}`}>
-                        <img className=""
-                            src={eleve.picture}
-                            alt="portrait" />
-                    </NavLink>
-                </div>
+            < div className="card" >
+                <NavLink to={`/DisplayEleve/${eleve._id}`}>
+                    <div style={{backgroundImage: `url(${eleve.picture})`}} className="image-container">
+
+                    </div>
+                </NavLink>
+
+                ￼￼
                 <div className="content">
                     <span>Name : {eleve.name} </span>
-                    <span>Name : {eleve.location} </span>
-                    <button className={ "select-btn" + (isActive ? "" : " locked")} onClick={this.handleClick}>Selec</button>
+                    <span>City : {eleve.location} </span>
+                    <button className={"select-btn" + (isActive ? "" : " locked")} onClick={this.handleClick}>Select</button>
                 </div>
-        </div >
+            </div >
 
 
-    );
+        );
     }
 };
 
