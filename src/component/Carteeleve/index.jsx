@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.css';
 import Carts from './../Carts/index';
 import { withRouter } from "react-router";
 
@@ -41,9 +42,10 @@ class CarteEleve extends React.Component {
         ));
         return (
             <React.Fragment>
-            <button onClick={this.handleBoutton}>Front-End</button>
-            <button>Back-End</button>
-
+            <div className='button-general'>
+            <button className='button' onClick={this.handleBoutton}>Front-End</button>
+            <button className='button'>Back-End</button>
+            </div>
             <div className="card-list">
                 {postEleve}
 
