@@ -1,5 +1,5 @@
 import React from 'react'
-import './index.css'
+import './index.css';
  const ChoixBoutton = () => (
 
     <div className="button-general">
@@ -8,4 +8,4 @@ import './index.css'
     </div> 
  );
 
-export default ChoixBoutton
+export default ChoixBoutton;

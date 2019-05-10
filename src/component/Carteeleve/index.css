@@ -1,7 +1,8 @@
 .button-general{
     display:flex;
-    }
+}
     
+<<<<<<< HEAD
     .button{
             width:100%;
             padding:0;
@@ -12,3 +13,15 @@
             border-bottom: solid 4px #2f3542;
             border-radius: 3px;
     }
+=======
+.button{
+    width:100%;
+    padding:0;
+    height:50px;
+    text-decoration: none;
+    background:rgb(#5eac16);
+    color: #FFF;
+    border-bottom: solid 4px #2c0505;
+    border-radius: 3px;
+}
+>>>>>>> 91e15391bb71195316f24e551ca419f49ecd82d7
