@@ -40,8 +40,9 @@ class DisplayEleve extends React.Component {
                         <li>Name : {eleve.name} </li>
                         <li>Lastname : {eleve.lastName} </li>
                         <li>Location : {eleve.location}</li>
-                        <li>Hardskills : {eleve.hardSkills} </li>
                         <li>Softskills : {eleve.softSkills}</li>
+                        <li>Contract : {eleve.contractType}</li>
+                        <li>Expertise : {eleve.expertise}</li>
                     </ul>
                     </div>
                     

@@ -36,8 +36,8 @@ class Carts extends React.Component {
                     </NavLink>
                 </div>
                 <div className="content">
-                    <span>Name : {eleve.name} </span>
-                    <span>Name : {eleve.location} </span>
+                    <span>Expertise : {eleve.expertise} </span>
+                    <span>Contract : {eleve.contractType} </span>
                     <button className={ "select-btn" + (isActive ? "" : " locked")} onClick={this.handleClick}>Selec</button>
                 </div>
         </div >

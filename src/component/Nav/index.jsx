@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 const NavWild = ({counter}) => {
     return (
         <Navbar bg="dark" variant="dark">
-            <Navbar.Brand tref="#home">Wilder</Navbar.Brand>
+            <Navbar.Brand tref="#home">The Team Sock</Navbar.Brand>
             <Nav className="mr-auto">
                 <NavLink activeClassName="selected" exact to='/' href="#home">Home</NavLink>
                 <NavLink activeClassName="selected" to='/student' href="#student">Student</NavLink>
