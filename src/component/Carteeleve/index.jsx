@@ -1,39 +1,57 @@
 import React from 'react';
-import DisplayEleve from './../Apicarte/index';
+import Carts from './../Carts/index';
+import { withRouter } from "react-router";
+
 
 class CarteEleve extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            AllStudent: []
+            AllStudent: this.props.data || [],
+            BouttonBF: false,
         };
     }
 
-    componentDidMount(){
-        this.getEleve();
+    componentDidMount() {
+        if(this.props.match.path === '/student'){
+            this.getEleve();
+        }
     }
     getEleve = () => {
         fetch('https://warm-sierra-59608.herokuapp.com/api/users')
             .then(response => response.json())
             .then(data => {
                 this.setState({
-                    AllStudent: data
+                    AllStudent:data
                 });
-            });
+            } );
     }
+    handleBoutton = () => {
+        this.setState({ BouttonBF: !this.state.BouttonBF});
+    };
 
     render() {
-        const postEleve = this.state.AllStudent.map((elem) => (
-            <DisplayEleve eleve={elem} />
+
+        const { selectStudent } = this.props;
+        const postEleve = this.state.AllStudent
+        
+        .filter(elem => !this.state.BouttonBF || elem.location.includes('Namur'))
+        .map((elem) => (
+            <Carts key={elem._id} eleve={elem} selectStudent={selectStudent} />
         ));
         return (
-            <ul>
-            { postEleve }
+            <React.Fragment>
+            <button onClick={this.handleBoutton}>Front-End</button>
+            <button>Back-End</button>
 
-            </ul>
+            <div className="card-list">
+                {postEleve}
+
+            </div>
+            </React.Fragment>
         )
     };
 
 }
 
-export default CarteEleve;
+export default withRouter (CarteEleve);
