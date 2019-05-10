@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
-import Header from './component/Header/index'
+import Header from './Component/Header/index'
 import 'bootstrap/dist/css/bootstrap.css'
 import NavWild from './component/Nav/index'
 import CarteEleve from './component/Carteeleve/index'
 import Team from './component/Team/index';
 import DisplayEleve from './component/Apicarte';
+import FooterPage from './Component/FooterPage/index';
 
 class App extends React.Component {
   constructor(props) {
@@ -36,6 +37,7 @@ class App extends React.Component {
           <Route path='/sine-up' component={Header.NavWild} />
           <Route path='/DisplayEleve/:mas' component={ DisplayEleve }/>
         </Switch>
+        <FooterPage/>
       </div>
     );
   }

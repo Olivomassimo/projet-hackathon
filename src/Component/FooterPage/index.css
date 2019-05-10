@@ -1,0 +1,19 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.fond{
+    background-color: rgb(00, 14, 27);
+    list-style: none ;
+    height: 70px;
+    width: 100%;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    
+}
