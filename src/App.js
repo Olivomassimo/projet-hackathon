@@ -30,26 +30,15 @@ class App extends React.Component {
     const { selectedStudent } = this.state;
     return (
       <div className='App'>
-<<<<<<< HEAD
-      <NavWild />
-      <CarteEleve />
-      <Switch>
-        <Route exact path='/' component={Header} />
-        <Route path='/time'  component={Header} />
-        <Route path='/sine-up' component={Formulaire} />
-      </Switch>
-      <FooterPage />
-=======
         <NavWild counter={selectedStudent.length} />
         <Switch>
           <Route exact path='/' component={Header} />
           <Route path='/student' render={() => <CarteEleve selectStudent={this.selectStudent} />} />
           <Route path='/team' render={() => <Team data={selectedStudent} />} />
-          <Route path='/sine-up' component={FooterPage} />
+          <Route path='/sine-up' component={Formulaire} />
           <Route path='/DisplayEleve/:mas' component={ DisplayEleve }/>
         </Switch>
         <FooterPage/>
->>>>>>> f30ce3243b660e312206f4f9a2a5139f274254d7
       </div>
     );
   }
