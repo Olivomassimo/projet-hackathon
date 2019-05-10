@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(51, 50, 50);
+    background-color: #ff6b81;
 }
 .field-container{
     width: 100%;
@@ -42,7 +42,7 @@ input:focus, textarea:focus {
    
 form label { 
      
-     color: #999999; 
+     color: #2f3542; 
     } 
 form{
     display: flex;
@@ -54,12 +54,12 @@ form{
 submit input { 
     width: auto; 
     padding: 9px 15px; 
-    background: #617798; 
+    background: #2f3542; 
     border: 0; 
     font-size: 14px; 
     color: #FFFFFF; 
     }
 div {
-         color: #999999; 
+         color: #2f3542; 
 
 }

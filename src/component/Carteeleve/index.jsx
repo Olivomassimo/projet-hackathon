@@ -35,8 +35,9 @@ class CarteEleve extends React.Component {
 
         const { selectStudent } = this.props;
         const postEleve = this.state.AllStudent
-        
-        .filter(elem => !this.state.BouttonBF || elem.location.includes('Namur'))
+        .filter(elem => {
+           return !this.state.BouttonBF || elem.location.includes('Namur')
+        })
         .map((elem) => (
             <Carts key={elem._id} eleve={elem} selectStudent={selectStudent} />
         ));

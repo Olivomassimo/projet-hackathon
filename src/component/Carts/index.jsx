@@ -24,11 +24,12 @@ class Carts extends React.Component {
     }
     render() {
        const { eleve, isActive } = this.state;
-       const { key } = this.props
+
+       
         return (
             < div className = "card" >
                 <div className="image-container">
-                    <NavLink to={`/DisplayEleve/${key}`}>
+                    <NavLink to={`/DisplayEleve/${eleve._id}`}>
                         <img className=""
                             src={eleve.picture}
                             alt="portrait" />

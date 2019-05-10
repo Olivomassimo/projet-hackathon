@@ -10,11 +10,11 @@
 }
 .card{
      display: block;
-     background-color: #fff;
+     background-color: #fdfdfd;
      width:calc( 100% - 20px);
      max-width: 300px;
      margin: 10px;
-     box-shadow:0 0 17px #bbb;
+     box-shadow:0 0 17px #535c68;
      border-bottom: solid black;
      overflow: hidden;
 }

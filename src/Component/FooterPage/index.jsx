@@ -34,7 +34,7 @@ const FooterPage = () => {
         <a href="https://www.linkedin.com/school/wild-codes-chool/"><img src={linkedin} alt="linkedin" /></a>
       </li>
       <li  className="icone-footer">
-        <a className="wild" href="https://wildcodeschool.be/brussels/"><img class="image" src={wild} alt="wild" /></a>
+        <a className="wild" href="https://wildcodeschool.be/brussels/"><img className="image" src={wild} alt="wild" /></a>
       </li>
     </ul>
   </footer>

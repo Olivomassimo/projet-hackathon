@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 class DisplayEleve extends React.Component {
     constructor(props) {
@@ -10,12 +11,17 @@ class DisplayEleve extends React.Component {
     }
 
     componentDidMount(){
-        const id = this.props.match.params.mas;
-        fetch(`https://warm-sierra-59608.herokuapp.com/api/user?userId=${id}`)
-        .then(response => response.json())
+        const id = this.props.match.params.id;
+        axios.get(`https://warm-sierra-59608.herokuapp.com/api/user?userId=${id}`, {
+            mode: 'no-cors',
+            crossdomain: true,
+            headers: {
+                'Access-Control-Allow-Origin': '*'
+            }
+          })
         .then(data => {
             this.setState({
-               eleve: data
+               eleve: data.data
             });
         } );
 
@@ -24,7 +30,7 @@ class DisplayEleve extends React.Component {
         const { eleve } = this.state;
         return (
           <div>
-               { this.state.eleve.length > 0
+               { this.state.eleve.name != null
                     &&
                 
                     <div>
