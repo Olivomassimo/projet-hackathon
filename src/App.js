@@ -34,7 +34,7 @@ class App extends React.Component {
           <Route exact path='/' component={Header} />
           <Route path='/student' render={() => <CarteEleve selectStudent={this.selectStudent} />} />
           <Route path='/team' render={() => <Team data={selectedStudent} />} />
-          <Route path='/sine-up' component={Header.NavWild} />
+          <Route path='/sine-up' component={FooterPage} />
           <Route path='/DisplayEleve/:mas' component={ DisplayEleve }/>
         </Switch>
         <FooterPage/>
