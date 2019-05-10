@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import './index.css'
 
 class DisplayEleve extends React.Component {
     constructor(props) {
@@ -37,12 +38,20 @@ class DisplayEleve extends React.Component {
                     <img className="photos" src={eleve.picture} alt='portrait' />
                     
                     <ul className="listeelement">
+<<<<<<< HEAD
                         <li>Name : {eleve.name} </li>
                         <li>Lastname : {eleve.lastName} </li>
                         <li>Location : {eleve.location}</li>
                         <li>Softskills : {eleve.softSkills}</li>
                         <li>Contract : {eleve.contractType}</li>
                         <li>Expertise : {eleve.expertise}</li>
+=======
+                        <li className="ele">Name : {eleve.name} </li>
+                        <li className="ele">Lastname : {eleve.lastName} </li>
+                        <li className="ele">Location : {eleve.location}</li>
+                        <li className="ele">Hardskills : {eleve.hardSkills.join(" ")} </li>
+                        <li className="ele">Softskills : {eleve.softSkills}</li>
+>>>>>>> 6d8182ebbef7e5b5ee5b9367140079abf9db4c1b
                     </ul>
                     </div>
                     
