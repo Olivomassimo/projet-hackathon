@@ -36,15 +36,11 @@ class Carts extends React.Component {
 
                 ￼￼
                 <div className="content">
-<<<<<<< HEAD
                     <span>Expertise : {eleve.expertise} </span>
                     <span>Contract : {eleve.contractType} </span>
-                    <button className={ "select-btn" + (isActive ? "" : " locked")} onClick={this.handleClick}>Selec</button>
-=======
                     <span>Name : {eleve.name} </span>
                     <span>City : {eleve.location} </span>
                     <button className={"select-btn" + (isActive ? "" : " locked")} onClick={this.handleClick}>Select</button>
->>>>>>> 6d8182ebbef7e5b5ee5b9367140079abf9db4c1b
                 </div>
             </div >
 

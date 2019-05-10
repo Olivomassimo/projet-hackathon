@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
-import Header from './Component/Header/index';
+import Header from './component/Header/index';
 import 'bootstrap/dist/css/bootstrap.css';
 import NavWild from './component/Nav/index';
 import CarteEleve from './component/Carteeleve/index';
 import Team from './component/Team/index';
 import DisplayEleve from './component/Apicarte/index';
-import FooterPage from './Component/FooterPage/index';
+import FooterPage from './component/FooterPage/index';
 import Formulaire from './component/Formulaire/index';
 
 class App extends React.Component {

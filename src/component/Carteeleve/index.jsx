@@ -10,6 +10,7 @@ class CarteEleve extends React.Component {
         this.state = {
             AllStudent: this.props.data || [],
             BouttonBF: false,
+            expertiseParam: 'front-end',
         };
     }
 
@@ -27,16 +28,21 @@ class CarteEleve extends React.Component {
                 });
             } );
     }
-    handleBoutton = () => {
-        this.setState({ BouttonBF: !this.state.BouttonBF});
+    handleBoutton = (e) => {
+        this.setState({ 
+            BouttonBF: true,
+            expertiseParam: e.target.name });
     };
 
     render() {
 
         const { selectStudent } = this.props;
+        const { BouttonBF, expertiseParam  } = this.state;
+        console.log(expertiseParam)
+
         const postEleve = this.state.AllStudent
         .filter(elem => {
-           return !this.state.BouttonBF || elem.location.includes('Front-End')
+           return !BouttonBF || elem.expertise.includes(expertiseParam)
         })
         .map((elem) => (
             <Carts key={elem._id} eleve={elem} selectStudent={selectStudent} />
@@ -44,8 +50,8 @@ class CarteEleve extends React.Component {
         return (
             <React.Fragment>
             <div className='button-general'>
-            <button className='button' onClick={this.handleBoutton}>Front-End</button>
-            <button className='button'>Back-End</button>
+            <button className='button' onClick={this.handleBoutton} name="front-end">Front-End</button>
+            <button className='button'onClick={this.handleBoutton} name="back-end">Back-End</button>
             </div>
             <div className="card-list">
                 {postEleve}
