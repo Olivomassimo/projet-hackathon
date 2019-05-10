@@ -8,6 +8,7 @@ import CarteEleve from './component/Carteeleve/index'
 import Team from './component/Team/index';
 import DisplayEleve from './component/Apicarte';
 import FooterPage from './Component/FooterPage/index';
+import Formulaire from './component/Formulaire/index';
 
 class App extends React.Component {
   constructor(props) {
@@ -29,6 +30,16 @@ class App extends React.Component {
     const { selectedStudent } = this.state;
     return (
       <div className='App'>
+<<<<<<< HEAD
+      <NavWild />
+      <CarteEleve />
+      <Switch>
+        <Route exact path='/' component={Header} />
+        <Route path='/time'  component={Header} />
+        <Route path='/sine-up' component={Formulaire} />
+      </Switch>
+      <FooterPage />
+=======
         <NavWild counter={selectedStudent.length} />
         <Switch>
           <Route exact path='/' component={Header} />
@@ -38,6 +49,7 @@ class App extends React.Component {
           <Route path='/DisplayEleve/:mas' component={ DisplayEleve }/>
         </Switch>
         <FooterPage/>
+>>>>>>> f30ce3243b660e312206f4f9a2a5139f274254d7
       </div>
     );
   }
