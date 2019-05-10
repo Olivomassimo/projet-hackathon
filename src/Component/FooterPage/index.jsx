@@ -5,7 +5,7 @@ import youtube from './../../assets/icons/youtube.svg';
 import instagram from './../../assets/icons/instagram.svg';
 import github from './../../assets/icons/github.svg';
 import linkedin from './../../assets/icons/linkedin.svg';
-import wild from './../../assets/icons/wild.jpg'
+import wild from './../../assets/icons/wild.jpg';
 import './index.css'
 
 
